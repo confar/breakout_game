@@ -71,6 +71,7 @@ class Game(Frame):
     def game_loop(self):
         self.check_collisions()
         num_bricks = len(self.canvas.find_withtag('brick'))
+        
         if num_bricks == 0:
             self.ball.speed = 0
             self.draw_text(300, 200, 'You win')
